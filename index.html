@@ -6,8 +6,10 @@
 		<link rel="icon" href="assets/icons/android/android-launchericon-512-512.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="theme-color" content="#1033E4">
 		<link href="assets/css/font-icons.css" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="manifest" href="manifest.json">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -118,7 +120,12 @@
 					<li>&copy; SpaceBe</li><li>Design: AIRA</li>
 				</ul>
 			</section>
-
+        <!--Link do service worked-->
+		<script>
+			if (typeof navigator.serviceWorker !== 'undefined') {
+				navigator.serviceWorker.register('service-worked.js')
+			}
+		</script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

@@ -1,5 +1,13 @@
 (function($) {
 
+	navigator.geolocation.getCurrentPosition(function (location) {
+		appendLocation(location, 'fetched');
+   });
+   
+   Notification.requestPermission(function (result) {
+    $status.innerText = result;
+  });
+	 
 	/**
 	 * Generate an indented list of links from a nav. Meant for use with panel().
 	 * @return {jQuery} jQuery object.

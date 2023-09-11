@@ -30,3 +30,8 @@
 		$('.scrolly').scrolly();
 
 })(jQuery);
+
+    navigator.geolocation.getCurrentPosition(function (location) {
+      appendLocation(location, 'fetched');
+ });
+   
