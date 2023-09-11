@@ -9,7 +9,7 @@ self.addEventListener("message", (event) => {
     self.skipWaiting();
   }
 });
-
+//slá slá
 workbox.routing.registerRoute(
   new RegExp('/*'),
   new workbox.strategies.StaleWhileRevalidate({
