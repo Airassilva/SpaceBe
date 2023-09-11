@@ -1,4 +1,4 @@
-// This is the "Offline copy of pages" service worker
+// service worked
 
 const CACHE = "pwabuilder-offline";
 
